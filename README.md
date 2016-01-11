@@ -7,7 +7,7 @@ house alarm via the HowAlarming platform.
 This is an open source application which you'll need to build yourself, you
 won't find it on the app store. See the instructions below.
 
-[![Current Version Screenshot](https://github.com/jethrocarr/howalarming-android/docs/Screenshot_2016-01-11-22-32-15.png)]
+[![Current Version Screenshot](https://raw.githubusercontent.com/jethrocarr/howalarming-android/master/docs/Screenshot_2016-01-11-22-32-15.png)]
 
 
 # Functionality
