@@ -34,7 +34,7 @@ Then you need to build this application. To do so:
 
 2. Create a new project in Google Apps and enable Google Compute Messaging in it at the [Google Developer Console](https://developers.google.com/mobile/add?platform=android&cntapi=gcm&cnturl=https:%2F%2Fdevelopers.google.com%2Fcloud-messaging%2Fandroid%2Fclient&cntlbl=Continue%20Adding%20GCM%20Support&%3Fconfigured%3Dtrue)
 
-3. Copy the provided google-services.json file to the app/ directory.
+3. Copy the provided `google-services.json` file to the app/ directory.
 
 4. Open this project with [Android Studio](http://developer.android.com/sdk/index.html)
 
