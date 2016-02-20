@@ -44,6 +44,7 @@ public class MyGcmListenerService extends GcmListenerService {
             Log.w(TAG, "Couldn't determine origin of message. Skipping.");
             return;
         }
+
         //try {
             recordEvents(data);
             notifyEvents(data);
@@ -149,7 +150,7 @@ public class MyGcmListenerService extends GcmListenerService {
                         new NotificationCompat.Builder(this)
                                 .setAutoCancel(true)
                                 .setNumber(++numMessages)
-                                .setSmallIcon(R.drawable.notification_icon)
+                                .setSmallIcon(R.drawable.ic_visibility_black_48dp)
                                 .setContentTitle("House Armed")
                                 .setContentText(data.getString("message"))
                                 .setVibrate(new long[]{500, 1000})
@@ -165,7 +166,7 @@ public class MyGcmListenerService extends GcmListenerService {
                         new NotificationCompat.Builder(this)
                                 .setAutoCancel(true)
                                 .setNumber(++numMessages)
-                                .setSmallIcon(R.drawable.notification_icon)
+                                .setSmallIcon(R.drawable.ic_visibility_off_black_48dp)
                                 .setContentTitle("House Unarmed")
                                 .setContentText(data.getString("message"))
                                 .setVibrate(new long[]{500, 1000})
@@ -185,7 +186,7 @@ public class MyGcmListenerService extends GcmListenerService {
                         new NotificationCompat.Builder(this)
                                 .setAutoCancel(true)
                                 .setNumber(++numMessages)
-                                .setSmallIcon(R.drawable.notification_icon)
+                                .setSmallIcon(R.drawable.ic_warning_black_48dp)
                                 .setContentTitle("ALARM TRIGGERED!")
                                 .setContentText(data.getString("message"))
                                 .setVibrate(new long[]{500, 9000})
@@ -203,7 +204,7 @@ public class MyGcmListenerService extends GcmListenerService {
                         new NotificationCompat.Builder(this)
                                 .setAutoCancel(true)
                                 .setNumber(++numMessages)
-                                .setSmallIcon(R.drawable.notification_icon)
+                                .setSmallIcon(R.drawable.ic_warning_black_48dp)
                                 .setContentTitle("Alarm Recovered")
                                 .setContentText(data.getString("message"))
                                 .setVibrate(new long[]{500, 9000})
@@ -223,7 +224,7 @@ public class MyGcmListenerService extends GcmListenerService {
                         new NotificationCompat.Builder(this)
                                 .setAutoCancel(true)
                                 .setNumber(++numMessages)
-                                .setSmallIcon(R.drawable.notification_icon)
+                                .setSmallIcon(R.drawable.ic_error_black_48dp)
                                 .setContentTitle("Alarm Fault Detected")
                                 .setContentText(data.getString("message"))
                                 .setVibrate(new long[]{500, 9000})
